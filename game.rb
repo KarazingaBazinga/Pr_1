@@ -1,0 +1,23 @@
+if ARGV.length < 2
+  puts "Too few arguments"
+elsif ARGV.length > 2
+  puts "Too many arguments"
+elsif ARGV[0]=="Stone" && ARGV[1]=="Paper"
+  puts "You lose"
+elsif ARGV[0]=="Stone" && ARGV[1]=="Scissors"
+  puts "You win"
+elsif ARGV[0]=="Stone" && ARGV[1]=="Stone"
+  puts "Tie"
+elsif ARGV[0]=="Scissors" && ARGV[1]=="Paper"
+  puts "You win"
+elsif ARGV[0]=="Scissors" && ARGV[1]=="Stone"
+  puts "You lose"
+elsif ARGV[0]=="Scissors" && ARGV[1]=="Scissors"
+  puts "Tie"
+elsif ARGV[0]=="Paper" && ARGV[1]=="Scissors"
+  puts "You lose"
+elsif ARGV[0]=="Paper" && ARGV[1]=="Stone"
+  puts "You win"
+elsif ARGV[0]=="Paper" && ARGV[1]=="Paper"
+  puts "Tie"
+end
